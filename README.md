@@ -1,1 +1,1 @@
-# especificacao_fulado-de-sal-app
+# especificacao_fulano-de-sal-app
