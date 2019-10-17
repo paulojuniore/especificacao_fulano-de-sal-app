@@ -1,1 +1,1 @@
-# especificacao_fulano-de-sal-app
+# Especificação Formal da aplicação Fulano de Sal
