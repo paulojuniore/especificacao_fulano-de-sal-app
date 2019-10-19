@@ -4,14 +4,21 @@ sig Cliente extends Usuario { }
 
 sig Administrador extends Usuario { }
 
-sig Categoria { }
+sig Categoria { 
+	produtos: set Produto
+}
 
-sig Produto { } 
+sig Pedido { 
+	marmita: one Marmita,
+	cliente: one Cliente
+}
+
+sig Cardapio {
+	categorias: set Categoria
+}
 
 sig Marmita { }
 
-sig Pedido { }
-
-sig Cardapio { }
+sig Produto { } 
 
 
