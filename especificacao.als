@@ -17,8 +17,8 @@ sig Cardapio {
 	categorias: set Categoria
 }
 
+sig Produto {
+	categoria: one Categoria
+}
+
 sig Marmita { }
-
-sig Produto { } 
-
-
