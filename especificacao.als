@@ -10,9 +10,7 @@ sig Produto {
 	categoria: one Categoria
 }
 
-sig Categoria { 
-	produtos: set Produto
-}
+sig Categoria { }
 
 sig Pedido { 
 	marmita: one Marmita,
@@ -30,10 +28,9 @@ fact garantirUmProdutoTerUmaCategoria {
 	all p: Produto | #p.categoria = 1
 }
 
-fact umaCategoriaTerVariosProdutos {
-	all cat: Categoria | #cat.produtos >= 0 
+fact garantirPedido {
+	all p: Pedido | #p.marmita = 1 and #p.cliente = 1 and #p.produtos >= 2
 }
 
-fact garantirPedido {
-	all p: Pedido | #p.marmita = 1 and #p.cliente = 1 and #p.produtos >= 1
-}
+pred show() {}
+run show for 2
