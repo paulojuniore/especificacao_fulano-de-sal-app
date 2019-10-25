@@ -33,4 +33,4 @@ fact garantirPedido {
 }
 
 pred show() {}
-run show for 2
+run show for 3
